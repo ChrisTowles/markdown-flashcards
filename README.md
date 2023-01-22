@@ -1,41 +1,28 @@
 <br>
 <p align="center">
-<a href="https://sli.dev" target="_blank">
-<img src="https://sli.dev/logo-title.png" alt="Slidev" height="250" width="250"/>
+<a href="https://github.com/ChrisTowles/markdown-flashcards" target="_blank">
+<img src="./assets/logo/logo-color.png" alt="markdown-flashcards" height="600" width="600"/>
 </a>
 </p>
 
 <p align="center">
-Presentation <b>slide</b>s for <b>dev</b>elopers 🧑‍💻👩‍💻👨‍💻
+Markdown Based Flashcards using Spaced repetition for Developers🧑‍💻👩‍💻👨‍💻
 </p>
 
-<p align="center">
-<a href="https://www.npmjs.com/package/@slidev/cli" target="__blank"><img src="https://img.shields.io/npm/v/@slidev/cli?color=2B90B6&label=" alt="NPM version"></a>
-<a href="https://www.npmjs.com/package/@slidev/cli" target="__blank"><img alt="NPM Downloads" src="https://img.shields.io/npm/dm/@slidev/cli?color=349dbe&label="></a>
-<a href="https://sli.dev/" target="__blank"><img src="https://img.shields.io/static/v1?label=&message=docs%20%26%20demos&color=45b8cd" alt="Docs & Demos"></a>
-<a href="https://sli.dev/themes/gallery.html" target="__blank"><img src="https://img.shields.io/static/v1?label=&message=themes&color=4ec5d4" alt="Themes"></a>
-<br>
-<a href="https://github.com/slidevjs/slidev" target="__blank"><img alt="GitHub stars" src="https://img.shields.io/github/stars/slidevjs/slidev?style=social"></a>
-</p>
+## Why
 
-<p align="center">
-  <a href="https://twitter.com/antfu7/status/1389604687502995457">Video Preview</a> | <a href="https://sli.dev">Documentation</a>
-</p>
+Using flashcards and spaced repetition for learning is great, but I found the [ANKI](https://apps.ankiweb.net/) hard to use and UI really dated. I tried looking for alternatives and used brainscape but Anki seems to be the gold standard. So the goal is to make a developer friendly version that is free and easy to modify in Markdown, and share modify cards via git repos.
 
-<div align="center">
-<table>
-<tbody>
-<td align="center">
-<img width="2000" height="0"><br>
-<sub>Made possible by my <a href="https://github.com/sponsors/antfu">Sponsor Program 💖</a></sub><br>
-<img width="2000" height="0">
-</td>
-</tbody>
-</table>
-</div>
+This project was started as a **fork** of Anthony Fu's amazing [Slidev](https://sli.dev/) which I'm using as the starting point and then starting to modify the repo from there. I started first by just creating empty repo and coping parts of the code from Slidev and then modifying it to work with flashcards.
+
+## What is Spaced repetition
+
+When learning flashcards can be really powerful tool. With technology, we can employ <https://en.wikipedia.org/wiki/Spaced_repetition>.
+
+> Spaced repetition is an evidence-based learning technique that is usually performed with flashcards. Newly introduced, and more difficult flashcards are shown more frequently, while older and less difficult flashcards are shown less frequently in order to exploit the psychological spacing effect. The use of spaced repetition has been proven to increase the rate of learning.
 
 ## Features
-
+<!--
 - 📝 [**Markdown-based**](https://sli.dev/guide/syntax.html) - use your favorite editors and workflow
 - 🧑‍💻 [**Developer Friendly**](https://sli.dev/guide/syntax.html#code-blocks) - built-in syntax highlighting, live coding, etc.
 - 🎨 [**Themable**](https://sli.dev/themes/gallery.html) - theme can be shared and used with npm packages.
@@ -50,14 +37,8 @@ Presentation <b>slide</b>s for <b>dev</b>elopers 🧑‍💻👩‍💻👨‍�
 - 📤 [**Portable**](https://sli.dev/guide/exporting.html) - export into PDF, PNGs, or even a hostable SPA.
 - ⚡️ [**Fast**](https://vitejs.dev) - instant reloading powered by [Vite](https://vitejs.dev).
 - 🛠 [**Hackable**](https://sli.dev/custom/config-vite.html) - using Vite plugins, Vue components, or any npm packages.
-
+-->
 ## Getting Started
-
-### Try it Online ⚡️
-
-[sli.dev/new](https://sli.dev/new)
-
-[![](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://sli.dev/new)
 
 ### Init Project Locally
 
@@ -66,13 +47,6 @@ Install [Node.js >=14](https://nodejs.org/) and run the following command:
 ```bash
 npm init slidev
 ```
-
-Documentations:
-**[English](https://sli.dev)** | [中文文档](https://cn.sli.dev) | [Français](https://fr.sli.dev) | [Español](https://es.sli.dev) | [Русский](https://ru.sli.dev) | [Português-BR](https://br.sli.dev)
-
-Discord: [chat.sli.dev](https://chat.sli.dev)
-
-For a full example, you can check the [demo](https://github.com/slidevjs/slidev/blob/main/demo) folder, which is also the source file for [my previous talk](https://antfu.me/posts/composable-vue-vueday-2021).
 
 ## Tech Stack
 
@@ -87,16 +61,22 @@ For a full example, you can check the [demo](https://github.com/slidevjs/slidev/
 - [KaTeX](https://katex.org/) - LaTeX math rendering.
 - [Mermaid](https://mermaid-js.github.io/mermaid) - Textual Diagrams.
 
-## Sponsors
+## History
 
-This project is made possible by all the sponsors supporting my work:
+I (Chris Towles) think this makes the ~~third time~~ (fifth and counting) I've started writing flashcard application, I've done them in `vue`, `flutter`, and `angular` in the past. Flipping flashcards on the screen was always easy but when managing a backend/database to allow sharing flashcard decks, edit and created decks always ended up a big mess. I've designed databases and Firebase backends but in the end I felt the amount of work required lead to me making trade-offs and losing interest as the complexity went up.
 
-<p align="center">
-  <a href="https://github.com/sponsors/antfu">
-    <img src='https://cdn.jsdelivr.net/gh/antfu/static/sponsors.svg'/>
-  </a>
-</p>
+This time I link will be different. By allowing git and GitHub to basically be the backend, and I can use the web tooling of [Vite](https://vitejs.dev/), [vitest](https://vitest.dev/), and node and just keep everything on local storage. I can also integrate with the ANKI API later if wanted.
+
+The goal of using Markdown comes because I document and take notes every day in Markdown and the flow and productivity is amazing. Using GitHub Copilot, plus a few vs-code [grammar extensions](https://github.com/ChrisTowles/dotfiles/blob/main/vscode-extendsions.md#grammar-and-spelling) makes it so productive. Add the ability to copy and paste images into the markdown via extensions, and it's nearly perfect.
+
+~~I copied a lot this project from [Anthony Fu's](https://github.com/sponsors/antfu) [Slidev](https://github.com/slidevjs/slidev) as the starting point and then starting to modify the repo from there.~~
+
+That was the original plan, but I've decided to fork from [slidev](https://sli.dev/) after realize how much I was going to have to copy from and because it couldn't tell if anything was working till all copied it was a mess.
+
+First I learn so much from reading others code and reading Anthony's code is always top-notch. If you don't know who he is, he's basically the most [productive developer](https://github.com/antfu) ever! And besides after using `Slidev` and then looking at its source it was a large part of the inspiration to start this project again.
 
 ## License
 
 MIT License © 2021 [Anthony Fu](https://github.com/antfu)
+
+Keeping the MIT license for from the fork from slidev.
