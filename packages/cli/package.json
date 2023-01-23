@@ -22,7 +22,10 @@
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "bin": {
-    "slidev": "./bin/slidev.js"
+    "markdown-flashcards": "./bin/markdown-flashcards.js",
+    "md-cards": "./bin/markdown-flashcards.js",
+    "flashcards": "./bin/markdown-flashcards.js",
+    "md-flashcards": "./bin/markdown-flashcards.js"
   },
   "files": [
     "bin",

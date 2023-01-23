@@ -1,10 +1,10 @@
 {
   "private": true,
   "scripts": {
-    "build": "slidev build",
-    "dev": "nodemon -w '../../packages/cli/dist/*.js' --exec \"slidev ./slides.md --open=false --log=info\"",
-    "export": "slidev export",
-    "export-notes": "slidev export-notes"
+    "build": "markdown-flashcards build",
+    "dev": "nodemon -w '../../packages/cli/dist/*.js' --exec \"markdown-flashcards ./slides.md --open=false --log=info\"",
+    "export": "markdown-flashcards export",
+    "export-notes": "markdown-flashcards export-notes"
   },
   "devDependencies": {
     "@markdown-flashcards/cli": "workspace:*",
