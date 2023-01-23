@@ -8,7 +8,7 @@
   },
   "devDependencies": {
     "@markdown-flashcards/cli": "workspace:*",
-    "@slidev/theme-default": "^0.21.2",
+    "@markdown-flashcards/theme-default": "workspace:*",
     "@slidev/theme-seriph": "^0.21.3",
     "@markdown-flashcards/types": "workspace:*",
     "nodemon": "^2.0.20"

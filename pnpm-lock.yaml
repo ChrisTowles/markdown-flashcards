@@ -99,14 +99,14 @@ importers:
   cypress/fixtures/basic:
     specifiers:
       '@markdown-flashcards/cli': workspace:*
+      '@markdown-flashcards/theme-default': workspace:*
       '@markdown-flashcards/types': workspace:*
-      '@slidev/theme-default': ^0.21.2
       '@slidev/theme-seriph': ^0.21.3
       nodemon: ^2.0.20
     devDependencies:
       '@markdown-flashcards/cli': link:../../../packages/cli
+      '@markdown-flashcards/theme-default': link:../../../packages/theme-default
       '@markdown-flashcards/types': link:../../../packages/types
-      '@slidev/theme-default': 0.21.2
       '@slidev/theme-seriph': 0.21.3
       nodemon: 2.0.20
 
@@ -115,30 +115,30 @@ importers:
       '@iconify-json/mdi': ^1.1.43
       '@iconify-json/ri': ^1.1.4
       '@markdown-flashcards/cli': workspace:*
+      '@markdown-flashcards/theme-default': workspace:*
       '@markdown-flashcards/types': workspace:*
-      '@slidev/theme-default': ^0.21.2
       '@slidev/theme-seriph': ^0.21.3
       nodemon: ^2.0.20
     devDependencies:
       '@iconify-json/mdi': 1.1.44
       '@iconify-json/ri': 1.1.4
       '@markdown-flashcards/cli': link:../../packages/cli
+      '@markdown-flashcards/theme-default': link:../../packages/theme-default
       '@markdown-flashcards/types': link:../../packages/types
-      '@slidev/theme-default': 0.21.2
       '@slidev/theme-seriph': 0.21.3
       nodemon: 2.0.20
 
   demo/starter:
     specifiers:
       '@markdown-flashcards/cli': workspace:*
+      '@markdown-flashcards/theme-default': workspace:*
       '@markdown-flashcards/types': workspace:*
-      '@slidev/theme-default': ^0.21.2
       '@slidev/theme-seriph': ^0.21.3
       nodemon: ^2.0.20
     devDependencies:
       '@markdown-flashcards/cli': link:../../packages/cli
+      '@markdown-flashcards/theme-default': link:../../packages/theme-default
       '@markdown-flashcards/types': link:../../packages/types
-      '@slidev/theme-default': 0.21.2
       '@slidev/theme-seriph': 0.21.3
       nodemon: 2.0.20
 
@@ -1247,16 +1247,6 @@ packages:
       estree-walker: 2.0.2
       picomatch: 2.3.1
     dev: false
-
-  /@slidev/theme-default/0.21.2:
-    resolution: {integrity: sha512-neUucFs2YrRZZd73QwvLTyRG/o1nerDFUR5t8YAmXVLTMzWfY71flQ6aAhjYf+WjsozYsOHcxi/pZtIzZ4VhTQ==}
-    engines: {node: '>=14.0.0', slidev: '>=0.19.2'}
-    dependencies:
-      '@slidev/types': 0.22.7
-      codemirror-theme-vars: 0.1.1
-      prism-theme-vars: 0.2.4
-      theme-vitesse: 0.1.14
-    dev: true
 
   /@slidev/theme-seriph/0.21.3:
     resolution: {integrity: sha512-cLya6O4hmcLHUhloCMPPoKMLX27Q+8M8pRS82BSsLXVeXTXrlpc3l3glx5VB738p+NQr7FgqFN6H2CXQRoVv9Q==}

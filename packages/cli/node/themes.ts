@@ -10,12 +10,12 @@ import { packageExists } from './utils'
 import { isPath } from './options'
 
 const officialThemes: Record<string, string> = {
-  'none': '',
-  'default': '@slidev/theme-default',
-  'seriph': '@slidev/theme-seriph',
-  'apple-basic': '@slidev/theme-apple-basic',
-  'shibainu': '@slidev/theme-shibainu',
-  'bricks': '@slidev/theme-bricks',
+  none: '',
+  default: '@markdown-flashcards/theme-default',
+  // 'seriph': '@slidev/theme-seriph',
+  // 'apple-basic': '@slidev/theme-apple-basic',
+  // 'shibainu': '@slidev/theme-shibainu',
+  // 'bricks': '@slidev/theme-bricks',
 }
 
 export async function getThemeMeta(name: string, path: string) {
@@ -25,8 +25,8 @@ export async function getThemeMeta(name: string, path: string) {
   if (path) {
     const { slidev = {}, engines = {} } = await fs.readJSON(path)
 
-    // if (engines.slidev && !satisfies(version, engines.slidev))
-    //   throw new Error(`[slidev] theme "${name}" requires Slidev version range "${engines.slidev}" but found "${version}"`)
+    if (engines.slidev && !satisfies(version, engines.slidev))
+      throw new Error(`[slidev] theme "${name}" requires Slidev version range "${engines.slidev}" but found "${version}"`)
 
     return slidev as SlidevThemeMeta
   }
@@ -36,16 +36,16 @@ export async function getThemeMeta(name: string, path: string) {
 export function resolveThemeName(name: string) {
   if (!name || name === 'none')
     return ''
-  if (name.startsWith('@slidev/theme-') || name.startsWith('slidev-theme-'))
+  if (name.startsWith('@markdown-flashcards/theme-') || name.startsWith('markdown-flashcards-theme-'))
     return name
   if (isPath(name))
     return name
 
   // search for local packages first
-  if (packageExists(`@slidev/theme-${name}`))
-    return `@slidev/theme-${name}`
-  if (packageExists(`slidev-theme-${name}`))
-    return `slidev-theme-${name}`
+  if (packageExists(`@markdown-flashcards/theme-${name}`))
+    return `@markdown-flashcards/theme-${name}`
+  if (packageExists(`markdown-flashcards-theme-${name}`))
+    return `markdown-flashcards-theme-${name}`
   if (packageExists(name))
     return name
 
@@ -54,7 +54,7 @@ export function resolveThemeName(name: string) {
     return officialThemes[name]
   if (name.indexOf('@') === 0 && name.includes('/'))
     return name
-  return `slidev-theme-${name}`
+  return `markdown-flashcards-theme-${name}`
 }
 
 export async function promptForThemeInstallation(name: string) {
