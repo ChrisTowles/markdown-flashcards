@@ -347,6 +347,21 @@ importers:
     devDependencies:
       '@types/js-yaml': 4.0.5
 
+  packages/theme-default:
+    specifiers:
+      '@markdown-flashcards/cli': ^0.0.1
+      '@markdown-flashcards/types': workspace:*
+      codemirror-theme-vars: ^0.1.1
+      prism-theme-vars: ^0.2.4
+      theme-vitesse: ^0.6.0
+    dependencies:
+      '@markdown-flashcards/types': link:../types
+      codemirror-theme-vars: 0.1.1
+      prism-theme-vars: 0.2.4
+      theme-vitesse: 0.6.0
+    devDependencies:
+      '@markdown-flashcards/cli': link:../cli
+
   packages/types:
     specifiers:
       tsup: ^5.12.7
@@ -2565,7 +2580,6 @@ packages:
 
   /codemirror-theme-vars/0.1.1:
     resolution: {integrity: sha512-Au0Ysn6tUMZB/1Jd5S8g4Or1kZxTuTnNx6MVs9H46Ad7w8IEjkHusH+4oyia/FBcVuAJO4DIlkDnPM8Qnnf1rg==}
-    dev: true
 
   /codemirror/5.65.11:
     resolution: {integrity: sha512-Gp62g2eKSCHYt10axmGhKq3WoJSvVpvhXmowNq7pZdRVowwtvBR/hi2LSP5srtctKkRT33T6/n8Kv1UGp7JW4A==}
@@ -6150,7 +6164,6 @@ packages:
 
   /prism-theme-vars/0.2.4:
     resolution: {integrity: sha512-B3Pht+GCT87sZph7hMRLlCQXzCM0awW7Rhk08RavpqRW4LEQOeqN0uMG4QCWkul2tr8PB61YAOJGUrEW+1uuJA==}
-    dev: true
 
   /prismjs/1.29.0:
     resolution: {integrity: sha512-Kx/1w86q/epKcmte75LNrEoT+lX8pBpavuAbvJWRXar7Hz8jrtF+e3vY751p0R8H9HdArwaCTNDDzHg/ScJK1Q==}
@@ -6807,6 +6820,11 @@ packages:
     resolution: {integrity: sha512-b5s+Zpfaw5+djoCJ9AEbcTbpiTlLsOvGM9oblDmmWRGWNqg9oXtEYO/uwubwx77novHBI6zNuwZRHKNlAIBo4A==}
     engines: {vscode: ^1.43.0}
     dev: true
+
+  /theme-vitesse/0.6.0:
+    resolution: {integrity: sha512-/XEZFGXLTK/AlWSe9t+NIXB1tP3yqdzugcSJJ2Fg0KYM1PcoL/zWs5AuaEcCFt1pfi/9Og++tzOdiU2aKf/+Xw==}
+    engines: {vscode: ^1.43.0}
+    dev: false
 
   /thenify-all/1.6.0:
     resolution: {integrity: sha512-RNxQH/qI8/t3thXJDwcstUO4zeqo64+Uy/+sNVRBx4Xn2OX+OZ9oP+iJnNFqplFra2ZUVeKCSa2oVWi3T4uVmA==}
