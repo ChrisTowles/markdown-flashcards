@@ -2,7 +2,7 @@ import type { MaybeRef } from '@vueuse/core'
 import { useFetch } from '@vueuse/core'
 import type { Ref } from 'vue'
 import { computed, ref, unref } from 'vue'
-import type { SlideInfo, SlideInfoExtended } from '@slidev/types'
+import type { SlideInfo, SlideInfoExtended } from '@markdown-flashcards/types'
 
 export interface UseSlideInfo {
   info: Ref<SlideInfoExtended | undefined>
@@ -16,7 +16,7 @@ export function useSlideInfo(id: number | undefined): UseSlideInfo {
       update: async () => {},
     }
   }
-  const url = `/@slidev/slide/${id}.json`
+  const url = `/@markdown-flashcards/slide/${id}.json`
   const { data: info, execute } = useFetch(url).json().get()
 
   execute()

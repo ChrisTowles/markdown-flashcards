@@ -1,7 +1,7 @@
 import { getCurrentInstance, onMounted } from 'vue'
 import * as monaco from 'monaco-editor'
 import { createSingletonPromise } from '@antfu/utils'
-import type { MonacoSetupReturn } from '@slidev/types'
+import type { MonacoSetupReturn } from '@markdown-flashcards/types'
 /* __imports__ */
 
 const setup = createSingletonPromise(async () => {

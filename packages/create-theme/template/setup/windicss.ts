@@ -1,5 +1,5 @@
 import { resolve } from 'path'
-import { defineWindiSetup } from '@slidev/types'
+import { defineWindiSetup } from '@markdown-flashcards/types'
 
 export default defineWindiSetup(() => ({
   extract: {

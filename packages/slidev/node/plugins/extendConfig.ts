@@ -11,10 +11,10 @@ import { searchForWorkspaceRoot } from '../vite/searchRoot'
 
 const EXCLUDE = [
   '@slidev/shared',
-  '@slidev/types',
-  '@slidev/client',
-  '@slidev/client/constants',
-  '@slidev/client/logic/dark',
+  '@markdown-flashcards/types',
+  '@markdown-flashcards/client',
+  '@markdown-flashcards/client/constants',
+  '@markdown-flashcards/client/logic/dark',
   '@vueuse/core',
   '@vueuse/shared',
   '@unocss/reset',
@@ -33,7 +33,7 @@ export function createConfigPlugin(options: ResolvedSlidevOptions): Plugin {
         define: getDefine(options),
         resolve: {
           alias: {
-            '@slidev/client/': `${toAtFS(options.clientRoot)}/`,
+            '@markdown-flashcards/client/': `${toAtFS(options.clientRoot)}/`,
           },
           dedupe: ['vue'],
         },
@@ -72,7 +72,7 @@ export function createConfigPlugin(options: ResolvedSlidevOptions): Plugin {
               searchForWorkspaceRoot(options.cliRoot),
               ...(
                 isInstalledGlobally
-                  ? [dirname(resolveGlobalImportPath('@slidev/client/package.json')), dirname(resolveGlobalImportPath('katex/package.json'))]
+                  ? [dirname(resolveGlobalImportPath('@markdown-flashcards/client/package.json')), dirname(resolveGlobalImportPath('katex/package.json'))]
                   : []
               ),
             ]),

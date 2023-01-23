@@ -7,7 +7,7 @@
     "export": "slidev export"
   },
   "dependencies": {
-    "@slidev/cli": "^0.38.4",
+    "@markdown-flashcards/cli": "^0.0.1",
     "@slidev/theme-default": "*",
     "@slidev/theme-seriph": "*"
   }

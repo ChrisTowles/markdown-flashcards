@@ -9,9 +9,9 @@ import { getSlideClass } from '../utils'
 import type { SlidevContextNav } from '../modules/context'
 import SlideWrapper from './SlideWrapper'
 // @ts-expect-error virtual module
-import GlobalTop from '/@slidev/global-components/top'
+import GlobalTop from '/@markdown-flashcards/global-components/top'
 // @ts-expect-error virtual module
-import GlobalBottom from '/@slidev/global-components/bottom'
+import GlobalBottom from '/@markdown-flashcards/global-components/bottom'
 
 const props = defineProps<{
   clicks: number

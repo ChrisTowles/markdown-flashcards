@@ -7,8 +7,8 @@ import Markdown from 'markdown-it'
 import type { RouteMeta } from 'vue-router'
 // @ts-expect-error missing types
 import mila from 'markdown-it-link-attributes'
-import type { SlideInfo, SlideInfoExtended, SlidevMarkdown } from '@slidev/types'
-import * as parser from '@slidev/parser/fs'
+import type { SlideInfo, SlideInfoExtended, SlidevMarkdown } from '@markdown-flashcards/types'
+import * as parser from '@markdown-flashcards/parser/fs'
 import equal from 'fast-deep-equal'
 
 import type { LoadResult } from 'rollup'
@@ -72,7 +72,7 @@ export function createSlidesLoader(
   VuePlugin: Plugin,
   MarkdownPlugin: Plugin,
 ): Plugin[] {
-  const slidePrefix = '/@slidev/slides/'
+  const slidePrefix = '/@markdown-flashcards/slides/'
   const hmrPages = new Set<number>()
   let server: ViteDevServer | undefined
 
@@ -129,17 +129,17 @@ export function createSlidesLoader(
         const moduleIds = new Set<string>()
 
         if (data.slides.length !== newData.slides.length) {
-          moduleIds.add('/@slidev/routes')
+          moduleIds.add('/@markdown-flashcards/routes')
           range(newData.slides.length).map(i => hmrPages.add(i))
         }
 
         if (!equal(data.headmatter.defaults, newData.headmatter.defaults)) {
-          moduleIds.add('/@slidev/routes')
+          moduleIds.add('/@markdown-flashcards/routes')
           range(data.slides.length).map(i => hmrPages.add(i))
         }
 
         if (!equal(data.config, newData.config))
-          moduleIds.add('/@slidev/configs')
+          moduleIds.add('/@markdown-flashcards/configs')
 
         if (!equal(data.features, newData.features)) {
           setTimeout(() => {
@@ -176,7 +176,7 @@ export function createSlidesLoader(
         Object.assign(data, newData)
 
         if (hmrPages.size > 0)
-          moduleIds.add('/@slidev/titles.md')
+          moduleIds.add('/@markdown-flashcards/titles.md')
 
         const vueModules = (
           await Promise.all(
@@ -211,46 +211,46 @@ export function createSlidesLoader(
       },
 
       resolveId(id) {
-        if (id.startsWith(slidePrefix) || id.startsWith('/@slidev/'))
+        if (id.startsWith(slidePrefix) || id.startsWith('/@markdown-flashcards/'))
           return id
         return null
       },
 
       load(id): LoadResult | Promise<LoadResult> {
         // routes
-        if (id === '/@slidev/routes')
+        if (id === '/@markdown-flashcards/routes')
           return generateRoutes()
 
         // layouts
-        if (id === '/@slidev/layouts')
+        if (id === '/@markdown-flashcards/layouts')
           return generateLayouts()
 
         // styles
-        if (id === '/@slidev/styles')
+        if (id === '/@markdown-flashcards/styles')
           return generateUserStyles()
 
         // monaco-types
-        if (id === '/@slidev/monaco-types')
+        if (id === '/@markdown-flashcards/monaco-types')
           return generateMonacoTypes()
 
         // configs
-        if (id === '/@slidev/configs')
+        if (id === '/@markdown-flashcards/configs')
           return generateConfigs()
 
         // global component
-        if (id === '/@slidev/global-components/top')
+        if (id === '/@markdown-flashcards/global-components/top')
           return generateGlobalComponents('top')
 
         // global component
-        if (id === '/@slidev/global-components/bottom')
+        if (id === '/@markdown-flashcards/global-components/bottom')
           return generateGlobalComponents('bottom')
 
         // custom nav controls
-        if (id === '/@slidev/custom-nav-controls')
+        if (id === '/@markdown-flashcards/custom-nav-controls')
           return generateCustomNavControls()
 
         // title
-        if (id === '/@slidev/titles.md') {
+        if (id === '/@markdown-flashcards/titles.md') {
           return {
             code: data.slides.map(({ title }, i) => {
               return `<template ${i === 0 ? 'v-if' : 'v-else-if'}="+no === ${i + 1}">
@@ -315,7 +315,7 @@ ${title}
       name: 'slidev:title-transform:pre',
       enforce: 'pre',
       transform(code, id) {
-        if (id !== '/@slidev/titles.md')
+        if (id !== '/@markdown-flashcards/titles.md')
           return
         return transformTitles(code)
       },
@@ -352,7 +352,7 @@ ${title}
     const imports = [
       'import { inject as vueInject } from "vue"',
       `import InjectedLayout from "${toAtFS(layouts[layoutName])}"`,
-      'import { injectionSlidevContext } from "@slidev/client/constants"',
+      'import { injectionSlidevContext } from "@markdown-flashcards/client/constants"',
       `const frontmatter = ${JSON.stringify(frontmatter)}`,
       'const $slidev = vueInject(injectionSlidevContext)',
     ]
@@ -373,7 +373,7 @@ ${title}
       return code // Assume that the context is already imported and used
     const imports = [
       'import { inject as vueInject } from "vue"',
-      'import { injectionSlidevContext } from "@slidev/client/constants"',
+      'import { injectionSlidevContext } from "@markdown-flashcards/client/constants"',
       'const $slidev = vueInject(injectionSlidevContext)',
     ]
     const matchScript = code.match(/<script((?!setup).)*(setup)?.*>/)
@@ -391,7 +391,7 @@ ${title}
         component = component.slice(0, component.indexOf('</script>'))
 
         const scriptIndex = (matchScript.index || 0) + matchScript[0].length
-        const provideImport = '\nimport { injectionSlidevContext } from "@slidev/client/constants"\n'
+        const provideImport = '\nimport { injectionSlidevContext } from "@markdown-flashcards/client/constants"\n'
         code = `${code.slice(0, scriptIndex)}${provideImport}${code.slice(scriptIndex)}`
 
         let injectIndex = exportIndex + provideImport.length

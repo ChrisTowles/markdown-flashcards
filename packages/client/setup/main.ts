@@ -1,6 +1,6 @@
 /* __imports__ */
 
-import type { AppContext } from '@slidev/types'
+import type { AppContext } from '@markdown-flashcards/types'
 import { MotionPlugin } from '@vueuse/motion'
 import StarportPlugin from 'vue-starport'
 

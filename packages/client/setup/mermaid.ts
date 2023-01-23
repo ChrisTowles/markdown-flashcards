@@ -1,7 +1,7 @@
 /* __imports__ */
 
-import type { MermaidOptions } from '@slidev/types'
-import { defineMermaidSetup } from '@slidev/types'
+import type { MermaidOptions } from '@markdown-flashcards/types'
+import { defineMermaidSetup } from '@markdown-flashcards/types'
 
 export default defineMermaidSetup(() => {
   // eslint-disable-next-line prefer-const

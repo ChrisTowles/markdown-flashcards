@@ -9,7 +9,7 @@ import type RemoteAssets from 'vite-plugin-remote-assets'
 import type ServerRef from 'vite-plugin-vue-server-ref'
 import type { ArgumentsType } from '@antfu/utils'
 import { uniq } from '@antfu/utils'
-import type { SlidevMarkdown } from '@slidev/types'
+import type { SlidevMarkdown } from '@markdown-flashcards/types'
 import _debug from 'debug'
 import { parser } from './parser'
 import { packageExists, resolveImportPath } from './utils'
@@ -80,7 +80,7 @@ export interface SlidevServerOptions {
 }
 
 export function getClientRoot() {
-  return dirname(resolveImportPath('@slidev/client/package.json', true))
+  return dirname(resolveImportPath('@markdown-flashcards/client/package.json', true))
 }
 
 export function getCLIRoot() {

@@ -1,8 +1,8 @@
-import type { SlidevConfig } from '@slidev/types'
+import type { SlidevConfig } from '@markdown-flashcards/types'
 import { computed } from 'vue'
 import { objectMap } from '@antfu/utils'
 // @ts-expect-error missing types
-import _configs from '/@slidev/configs'
+import _configs from '/@markdown-flashcards/configs'
 
 export const configs = _configs as SlidevConfig
 export const slideAspect = configs.aspectRatio ?? (16 / 9)

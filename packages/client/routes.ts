@@ -3,8 +3,8 @@ import { createRouter, createWebHashHistory, createWebHistory } from 'vue-router
 import Play from './internals/Play.vue'
 import Print from './internals/Print.vue'
 // @ts-expect-error missing types
-import _rawRoutes from '/@slidev/routes'
-import _configs from '/@slidev/configs'
+import _rawRoutes from '/@markdown-flashcards/routes'
+import _configs from '/@markdown-flashcards/configs'
 
 export const rawRoutes = _rawRoutes as RouteRecordRaw[]
 

@@ -3,7 +3,7 @@ import {
   transformPageCSS,
   transformPlantUml,
   transformSlotSugar,
-} from '@slidev/cli/node/plugins/markdown'
+} from '@markdown-flashcards/cli/node/plugins/markdown'
 import { describe, expect, it } from 'vitest'
 
 describe('markdown transform', () => {

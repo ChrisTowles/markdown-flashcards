@@ -1,4 +1,4 @@
-import { defineMonacoSetup } from '@slidev/types'
+import { defineMonacoSetup } from '@markdown-flashcards/types'
 
 export default defineMonacoSetup((monaco) => {
   monaco.languages.typescript.typescriptDefaults.addExtraLib(

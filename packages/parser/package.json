@@ -1,6 +1,6 @@
 {
-  "name": "@slidev/parser",
-  "version": "0.38.4",
+  "name": "@markdown-flashcards/parser",
+  "version": "0.0.1",
   "description": "Markdown parser for Slidev",
   "author": "antfu <anthonyfu117@hotmail.com>",
   "license": "MIT",
@@ -44,7 +44,10 @@
     "prepublishOnly": "npm run build"
   },
   "dependencies": {
-    "@slidev/types": "workspace:*",
+    "@markdown-flashcards/types": "workspace:*",
     "js-yaml": "^4.1.0"
+  },
+  "devDependencies": {
+    "@types/js-yaml": "^4.0.5"
   }
 }

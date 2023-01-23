@@ -1,5 +1,5 @@
 {
-  "version": "0.38.4",
+  "version": "0.0.1",
   "private": true,
   "packageManager": "pnpm@7.12.0",
   "engines": {
@@ -23,9 +23,9 @@
     "@antfu/eslint-config": "^0.34.1",
     "@antfu/ni": "^0.18.8",
     "@antfu/utils": "^0.7.2",
-    "@slidev/cli": "workspace:*",
-    "@slidev/parser": "workspace:*",
-    "@slidev/types": "workspace:*",
+    "@markdown-flashcards/cli": "workspace:*",
+    "@markdown-flashcards/parser": "workspace:*",
+    "@markdown-flashcards/types": "workspace:*",
     "@types/cli-progress": "^3.11.0",
     "@types/codemirror": "^5.60.6",
     "@types/connect": "^3.4.35",

@@ -8,5 +8,10 @@
     "*.css": "postcss"
   },
   "vite.devCommand": "nr docs",
-  "vite.open": false
+  "vite.open": false,
+  "markdownlint.config": {
+    "default": true,
+    "MD033": false, // allow inline HTML
+    "MD025": false, // allow multiple top-level headings
+  }
 }

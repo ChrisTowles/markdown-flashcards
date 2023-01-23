@@ -1,6 +1,6 @@
 /* __imports__ */
 import { and, not } from '@vueuse/math'
-import type { NavOperations, ShortcutOptions } from '@slidev/types'
+import type { NavOperations, ShortcutOptions } from '@markdown-flashcards/types'
 import { downloadPDF, go, goFirst, goLast, next, nextSlide, prev, prevSlide } from '../logic/nav'
 import { toggleDark } from '../logic/dark'
 import { magicKeys, showGotoDialog, showOverview, toggleOverview } from '../state'

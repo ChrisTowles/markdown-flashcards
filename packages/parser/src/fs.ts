@@ -1,6 +1,6 @@
 import { promises as fs } from 'fs'
 import { dirname, resolve } from 'path'
-import type { PreparserExtensionLoader, SlideInfo, SlideInfoWithPath, SlidevMarkdown, SlidevPreparserExtension, SlidevThemeMeta } from '@slidev/types'
+import type { PreparserExtensionLoader, SlideInfo, SlideInfoWithPath, SlidevMarkdown, SlidevPreparserExtension, SlidevThemeMeta } from '@markdown-flashcards/types'
 import { detectFeatures, mergeFeatureFlags, parse, stringify, stringifySlide } from './core'
 export * from './core'
 

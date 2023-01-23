@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed, inject } from 'vue'
-import type { RenderContext } from '@slidev/types'
+import type { RenderContext } from '@markdown-flashcards/types'
 
 import { injectionSlideContext } from '../constants'
 

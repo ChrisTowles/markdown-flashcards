@@ -10,11 +10,11 @@ import yargs from 'yargs'
 import prompts from 'prompts'
 import { blue, bold, cyan, dim, gray, green, underline, yellow } from 'kolorist'
 import type { LogLevel, ViteDevServer } from 'vite'
-import type { SlidevConfig, SlidevPreparserExtension } from '@slidev/types'
+import type { SlidevConfig, SlidevPreparserExtension } from '@markdown-flashcards/types'
 import isInstalledGlobally from 'is-installed-globally'
 import equal from 'fast-deep-equal'
-import { verifyConfig } from '@slidev/parser'
-import { injectPreparserExtensionLoader } from '@slidev/parser/fs'
+import { verifyConfig } from '@markdown-flashcards/parser'
+import { injectPreparserExtensionLoader } from '@markdown-flashcards/parser/fs'
 import { version } from '../package.json'
 import { createServer } from './server'
 import type { ResolvedSlidevOptions } from './options'
@@ -487,7 +487,7 @@ function printInfo(options: ResolvedSlidevOptions, port?: number, remote?: strin
   console.log()
   console.log()
   console.log(`  ${cyan('●') + blue('■') + yellow('▲')}`)
-  console.log(`${bold('  Slidev')}  ${blue(`v${version}`)} ${isInstalledGlobally ? yellow('(global)') : ''}`)
+  console.log(`${bold('  Markdown Flashcards')}  ${blue(`v${version}`)} ${isInstalledGlobally ? yellow('(global)') : ''}`)
   console.log()
   console.log(dim('  theme   ') + (options.theme ? green(options.theme) : gray('none')))
   console.log(dim('  entry   ') + dim(path.dirname(options.entry) + path.sep) + path.basename(options.entry))

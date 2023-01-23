@@ -9,7 +9,7 @@ import Settings from './Settings.vue'
 import MenuButton from './MenuButton.vue'
 import VerticalDivider from './VerticalDivider.vue'
 // @ts-expect-error virtual module
-import CustomNavControls from '/@slidev/custom-nav-controls'
+import CustomNavControls from '/@markdown-flashcards/custom-nav-controls'
 
 const props = defineProps({
   persist: {

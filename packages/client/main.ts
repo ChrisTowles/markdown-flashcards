@@ -6,7 +6,7 @@ import { router } from './routes'
 import createDirectives from './modules/directives'
 import createSlidevContext from './modules/context'
 
-import '/@slidev/styles'
+import '/@markdown-flashcards/styles'
 
 const app = createApp(App)
 app.use(router)

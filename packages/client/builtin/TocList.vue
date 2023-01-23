@@ -10,7 +10,7 @@ Usage:
 import { computed } from 'vue'
 import { toArray } from '@antfu/utils'
 // @ts-expect-error virtual module
-import Titles from '/@slidev/titles.md'
+import Titles from '/@markdown-flashcards/titles.md'
 import type { TocItem } from '../logic/nav'
 
 const props = withDefaults(defineProps<{

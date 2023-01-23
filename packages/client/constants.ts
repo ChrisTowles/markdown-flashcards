@@ -1,6 +1,6 @@
 import type { ComputedRef, InjectionKey, Ref } from 'vue'
 import type { RouteRecordRaw } from 'vue-router'
-import type { RenderContext } from '@slidev/types'
+import type { RenderContext } from '@markdown-flashcards/types'
 import type { SlidevContext } from './modules/context'
 
 export const injectionClicks: InjectionKey<Ref<number>> = Symbol('v-click-clicks')

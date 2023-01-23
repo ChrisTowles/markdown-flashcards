@@ -1,6 +1,6 @@
 import fs from 'fs-extra'
 import { satisfies } from 'semver'
-import type { SlidevConfig } from '@slidev/types'
+import type { SlidevConfig } from '@markdown-flashcards/types'
 import { version } from '../package.json'
 import { packageExists, resolveImportPath } from './utils'
 import { isPath } from './options'

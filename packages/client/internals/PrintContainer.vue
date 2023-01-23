@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { parseRangeString } from '@slidev/parser/core'
+import { parseRangeString } from '@markdown-flashcards/parser/core'
 import { computed, provide } from 'vue'
 import { configs, slideAspect, slideWidth } from '../env'
 import { injectionSlideScale } from '../constants'

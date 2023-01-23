@@ -9,7 +9,7 @@ declare module '*.md' {
   export default component
 }
 
-declare module '/@slidev/configs' {
-  import { SlidevConfig } from '@slidev/types'
+declare module '/@markdown-flashcards/configs' {
+  import { SlidevConfig } from '@markdown-flashcards/types'
   export default SlidevConfig
 }
