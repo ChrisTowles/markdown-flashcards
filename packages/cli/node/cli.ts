@@ -486,7 +486,7 @@ function commonOptions(args: Argv<{}>) {
 function printInfo(options: ResolvedSlidevOptions, port?: number, remote?: string) {
   console.log()
   console.log()
-  console.log(`  ${cyan('●') + blue('■') + yellow('▲')}`)
+  console.log(`  ${blue('🂠')} ${yellow('🂠')}`)
   console.log(`${bold('  Markdown Flashcards')}  ${blue(`v${version}`)} ${isInstalledGlobally ? yellow('(global)') : ''}`)
   console.log()
   console.log(dim('  theme   ') + (options.theme ? green(options.theme) : gray('none')))

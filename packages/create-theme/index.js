@@ -18,8 +18,8 @@ const renameFiles = {
 
 async function init() {
   console.log()
-  console.log(`  ${cyan('●') + blue('■') + yellow('▲')}`)
-  console.log(`${bold('  Slidev') + dim(' Theme Creator')}  ${blue(`v${version}`)}`)
+  console.log(`  ${blue('🂠')} ${yellow('🂠')}`)
+  console.log(`${bold('  Markdown Flashcards') + dim(' Theme Creator')}  ${blue(`v${version}`)}`)
   console.log()
 
   let targetDir = argv._[0]
@@ -31,7 +31,7 @@ async function init() {
       type: 'text',
       name: 'name',
       message: 'Theme name:',
-      initial: 'slidev-theme-starter',
+      initial: 'markdown-flashcards-theme-starter',
     })
     targetDir = name
   }
@@ -62,7 +62,7 @@ async function init() {
     }
   }
 
-  console.log(dim('  Scaffolding Slidev theme in ') + targetDir + dim(' ...'))
+  console.log(dim('  Scaffolding Markdown Flashcards theme in ') + targetDir + dim(' ...'))
 
   prepareTemplate(root, path.join(__dirname, 'template'), packageName)
 
@@ -81,7 +81,7 @@ async function init() {
   console.log(blue(`  ${pkgManager === 'yarn' ? 'yarn' : `${pkgManager} install`}`))
   console.log(blue(`  ${pkgManager === 'yarn' ? 'yarn dev' : `${pkgManager} run dev`}`))
   console.log()
-  console.log(`  ${cyan('●')} ${blue('■')} ${yellow('▲')}`)
+  console.log(`  ${blue('🂠')} ${yellow('🂠')}`)
   console.log()
 }
 
@@ -130,13 +130,13 @@ function copy(src, dest) {
 
 function getValidPackageName(projectName) {
   projectName = path.basename(projectName)
-  if (!projectName.startsWith('slidev-theme-'))
-    return `slidev-theme-${projectName}`
+  if (!projectName.startsWith('markdown-flashcards-theme-'))
+    return `markdown-flashcards-theme-${projectName}`
   return projectName
 }
 
 function getThemeName(pkgName) {
-  return pkgName.replace(/^slidev-theme-/, '')
+  return pkgName.replace(/^markdown-flashcards-/, '')
 }
 
 function copyDir(srcDir, destDir) {

@@ -1,22 +1,19 @@
-# create-slidev-theme
+# create-markdown-flashcards-theme
 
-[![NPM version](https://img.shields.io/npm/v/create-slidev-theme?color=3AB9D4&label=)](https://www.npmjs.com/package/create-slidev-theme)
-
-[Slidev](https://sli.dev) theme template generater.
+Markdown Flashcards theme template generator.
 
 ## Usage
 
 ```bash
-npm init slidev-theme
+npm init markdown-flashcards-theme
 ```
 
 or
 
 ```bash
-yarn create slidev-theme
+yarn create markdown-flashcards-theme
 ```
 
 ## License
 
 MIT License © 2021 [Anthony Fu](https://github.com/antfu)
-

@@ -1,10 +1,10 @@
 {
   "private": true,
   "scripts": {
-    "dev": "nodemon -w '../../packages/cli/dist/*.js' --exec 'slidev --log=info'",
-    "build": "slidev build",
-    "export": "slidev export",
-    "export:clicks": "slidev export --with-clicks"
+    "dev": "nodemon -w '../../packages/cli/dist/*.js' --exec 'markdown-flashcards --log=info'",
+    "build": "markdown-flashcards build",
+    "export": "markdown-flashcards export",
+    "export:clicks": "markdown-flashcards export --with-clicks"
   },
   "devDependencies": {
     "@iconify-json/mdi": "^1.1.43",
