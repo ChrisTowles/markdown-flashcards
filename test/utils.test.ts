@@ -2,7 +2,7 @@ import MarkdownIt from 'markdown-it'
 import { describe, expect, it } from 'vitest'
 import type { ResolvedFontOptions } from '../packages/parser/node_modules/@markdown-flashcards/types'
 import { parseAspectRatio, parseRangeString } from '../packages/parser/src'
-import { generateGoogleFontsUrl, stringifyMarkdownTokens } from '../packages/slidev/node/utils'
+import { generateGoogleFontsUrl, stringifyMarkdownTokens } from '../packages/cli/node/utils'
 
 describe('utils', () => {
   it('page-range', () => {
