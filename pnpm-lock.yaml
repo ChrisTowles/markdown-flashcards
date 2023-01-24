@@ -151,6 +151,7 @@ importers:
       '@lillallol/outline-pdf': ^4.0.0
       '@markdown-flashcards/client': workspace:*
       '@markdown-flashcards/parser': workspace:*
+      '@markdown-flashcards/theme-default': workspace:*
       '@markdown-flashcards/types': workspace:*
       '@types/plantuml-encoder': ^1.4.0
       '@vitejs/plugin-vue': ^4.0.0
@@ -205,6 +206,7 @@ importers:
       '@lillallol/outline-pdf': 4.0.0
       '@markdown-flashcards/client': link:../client
       '@markdown-flashcards/parser': link:../parser
+      '@markdown-flashcards/theme-default': link:../theme-default
       '@markdown-flashcards/types': link:../types
       '@vitejs/plugin-vue': 4.0.0_vite@4.0.4+vue@3.2.45
       cli-progress: 3.11.2

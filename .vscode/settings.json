@@ -13,5 +13,9 @@
     "default": true,
     "MD033": false, // allow inline HTML
     "MD025": false, // allow multiple top-level headings
+  },
+  "editor.quickSuggestions": {
+    // imporve suggestions for windi
+    "strings": true
   }
 }
