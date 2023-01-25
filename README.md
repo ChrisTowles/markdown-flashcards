@@ -75,6 +75,11 @@ That was the original plan, but I've decided to fork from [slidev](https://sli.d
 
 First I learn so much from reading others code and reading Anthony's code is always top-notch. If you don't know who he is, he's basically the most [productive developer](https://github.com/antfu) ever! And besides after using `Slidev` and then looking at its source it was a large part of the inspiration to start this project again.
 
+## Other
+
+- [Troubleshooting](./docs/troubleshooting.md)
+- `@slidev/cli` is included in root `package.json` so that the VS Code Extension [antfu.slidev](https://marketplace.visualstudio.com/items?itemName=antfu.slidev) can use it. This is a hack for now.
+
 ## License
 
 MIT License © 2021 [Anthony Fu](https://github.com/antfu)

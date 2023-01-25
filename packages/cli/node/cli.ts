@@ -488,6 +488,7 @@ function printInfo(options: ResolvedSlidevOptions, port?: number, remote?: strin
   console.log()
   console.log(`  ${blue('🂠')} ${yellow('🂠')}`)
   console.log(`${bold('  Markdown Flashcards')}  ${blue(`v${version}`)} ${isInstalledGlobally ? yellow('(global)') : ''}`)
+  console.log(`${dim('  Inspired by and forked from ')}${bold('Slidev')} ${dim('-')} ${blue('https://github.com/slidevjs/slidev')} ${dim('by')} ${bold('Anthony Fu')}`)
   console.log()
   console.log(dim('  theme   ') + (options.theme ? green(options.theme) : gray('none')))
   console.log(dim('  entry   ') + dim(path.dirname(options.entry) + path.sep) + path.basename(options.entry))

@@ -1,6 +1,6 @@
 ---
 # try also 'default' to start simple
-theme: default 
+theme: default
 # random image from a curated Unsplash collection by Anthony
 # like them? see https://unsplash.com/collections/94734566/slidev
 background: https://source.unsplash.com/collection/94734566/1920x1080
@@ -111,9 +111,8 @@ Hover on the bottom-left corner to see the navigation's controls panel, [learn m
 <p v-after class="absolute bottom-23 left-45 opacity-30 transform -rotate-10">Here!</p>
 
 ---
-
 layout: image-right
-image: <https://source.unsplash.com/collection/94734566/1920x1080>
+image: https://source.unsplash.com/collection/94734566/1920x1080
 ---
 
 # Code
@@ -193,8 +192,8 @@ Also, HTML elements are valid:
 </div>
 -->
 
----
 
+---
 class: px-20
 ---
 
@@ -226,7 +225,6 @@ Read more about [How to use a theme](https://sli.dev/themes/use.html) and
 check out the [Awesome Themes Gallery](https://sli.dev/themes/gallery.html).
 
 ---
-
 preload: false
 ---
 
@@ -391,13 +389,11 @@ database "MySql" {
 [Learn More](https://sli.dev/guide/syntax.html#diagrams)
 
 ---
-
 src: ./pages/multiple-entries.md
 hide: false
 ---
 
 ---
-
 layout: center
 class: text-center
 ---

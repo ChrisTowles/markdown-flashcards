@@ -15,7 +15,7 @@ import type { LoadResult } from 'rollup'
 import type { ResolvedSlidevOptions, SlidevPluginOptions, SlidevServerOptions } from '../options'
 import { resolveImportPath, stringifyMarkdownTokens, toAtFS } from '../utils'
 
-const regexId = /^\/\@markdown-flashcards\/slide\/(\d+)\.(md|json)(?:\?import)?$/
+const regexId = /^\/\@markdown\-flashcards\/slide\/(\d+)\.(md|json)(?:\?import)?$/
 const regexIdQuery = /(\d+?)\.(md|json)$/
 
 export function getBodyJson(req: Connect.IncomingMessage) {
@@ -324,7 +324,7 @@ ${title}
       name: 'slidev:slide-transform:post',
       enforce: 'post',
       transform(code, id) {
-        if (!id.match(/\/@markdown-flashcards\/slides\/\d+\.md($|\?)/))
+        if (!id.match(/\/@slidev\/slides\/\d+\.md($|\?)/))
           return
         // force reload slide component to ensure v-click resolves correctly
         return code.replace('if (_rerender_only)', 'if (false)')
@@ -520,7 +520,7 @@ defineProps<{ no: number | string }>()`)
   }
 
   async function generateMonacoTypes() {
-    return `void 0; ${parser.scanMonacoModules(data.raw).map(i => `import('/@slidev-monaco-types/${i}')`).join('\n')}`
+    return `void 0; ${parser.scanMonacoModules(data.raw).map(i => `import('/@markdown-flashcards-monaco-types/${i}')`).join('\n')}`
   }
 
   async function generateLayouts() {

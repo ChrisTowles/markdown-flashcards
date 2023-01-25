@@ -11,6 +11,6 @@ export default defineWindiSetup(() => ({
     ],
   },
   shortcuts: {
-    'bg-main': 'bg-white text-[#181818] dark:(bg-[#121212] text-[#ddd])',
+    'bg-main': 'bg-white text-[#555] dark:(bg-[#121212] text-[#ddd])',
   },
 }))
