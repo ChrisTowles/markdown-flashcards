@@ -11,6 +11,6 @@ if (!fs.existsSync(starterMd))
   await fs.copyFile(path.resolve(__dirname, '../packages/create-app/template/slides.md'), starterMd)
 
 cd(path.resolve(__dirname, '../demo/composable-vue'))
-await $`npx slidev build -d --base /composable-vue/ --out ../../dist/composable-vue`
+await $`npx markdown-flashcards build -d --base /composable-vue/ --out ../../dist/composable-vue`
 cd(path.resolve(__dirname, '../demo/starter'))
-await $`npx slidev build -d --base /starter/ --out ../../dist/starter`
+await $`npx markdown-flashcards build -d --base /starter/ --out ../../dist/starter`

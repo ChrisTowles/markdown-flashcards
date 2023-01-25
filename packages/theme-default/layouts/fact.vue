@@ -1,5 +1,5 @@
 <template>
-  <div class="markdown-flashcards-layout intro">
+  <div class="slidev-layout fact">
     <div class="my-auto">
       <slot />
     </div>

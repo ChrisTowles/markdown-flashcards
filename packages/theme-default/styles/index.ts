@@ -1,4 +1,4 @@
-// inherit from base layouts, remove it to get full customizations
 import '@markdown-flashcards/client/styles/layouts-base.css'
-import './layout.css'
-import './code.css'
+import './layouts.css'
+import './prism.css'
+import './shiki.css'
