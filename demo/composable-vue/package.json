@@ -10,8 +10,8 @@
     "@iconify-json/mdi": "^1.1.43",
     "@iconify-json/ri": "^1.1.4",
     "@markdown-flashcards/cli": "workspace:*",
+    "@markdown-flashcards/client": "workspace:*",
     "@markdown-flashcards/theme-default": "workspace:*",
-    "@slidev/theme-seriph": "^0.21.3",
     "@markdown-flashcards/types": "workspace:*",
     "nodemon": "^2.0.20"
   }

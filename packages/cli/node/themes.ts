@@ -12,10 +12,7 @@ import { isPath } from './options'
 const officialThemes: Record<string, string> = {
   none: '',
   default: '@markdown-flashcards/theme-default',
-  // 'seriph': '@slidev/theme-seriph',
-  // 'apple-basic': '@slidev/theme-apple-basic',
-  // 'shibainu': '@slidev/theme-shibainu',
-  // 'bricks': '@slidev/theme-bricks',
+
 }
 
 export async function getThemeMeta(name: string, path: string) {

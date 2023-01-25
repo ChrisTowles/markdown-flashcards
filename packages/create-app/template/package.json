@@ -2,13 +2,12 @@
   "name": "untitled",
   "private": true,
   "scripts": {
-    "build": "slidev build",
-    "dev": "slidev --open",
-    "export": "slidev export"
+    "build": "markdown-flashcards build",
+    "dev": "markdown-flashcards --open",
+    "export": "markdown-flashcards export"
   },
   "dependencies": {
     "@markdown-flashcards/cli": "^0.0.1",
-    "@markdown-flashcards/theme-default": "*",
-    "@slidev/theme-seriph": "*"
+    "@markdown-flashcards/theme-default": "*"
   }
 }
