@@ -1,4 +1,4 @@
-import { defineShikiSetup } from '@slidev/types'
+import { defineShikiSetup } from '@markdown-flashcards/types'
 
 export default defineShikiSetup(async({ loadTheme }) => {
   return {

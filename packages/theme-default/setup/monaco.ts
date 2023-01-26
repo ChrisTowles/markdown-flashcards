@@ -1,4 +1,4 @@
-import { defineMonacoSetup } from '@slidev/types'
+import { defineMonacoSetup } from '@markdown-flashcards/types'
 
 export default defineMonacoSetup(async(monaco) => {
   await Promise.all([

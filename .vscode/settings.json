@@ -17,5 +17,7 @@
   "editor.quickSuggestions": {
     // imporve suggestions for windi
     "strings": true
-  }
+  },
+  // make slidev extension work even when @slidev/cli is not installed
+  "slidev.enabled": true,
 }

@@ -27,7 +27,6 @@
     "@markdown-flashcards/cli": "workspace:*",
     "@markdown-flashcards/parser": "workspace:*",
     "@markdown-flashcards/types": "workspace:*",
-    "@slidev/cli": "^0.38.4",
     "@types/cli-progress": "^3.11.0",
     "@types/codemirror": "^5.60.6",
     "@types/connect": "^3.4.35",

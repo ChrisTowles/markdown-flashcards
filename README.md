@@ -6,8 +6,12 @@
 </p>
 
 <p align="center">
-Markdown Based Flashcards using Spaced repetition for Developers🧑‍💻👩‍💻👨‍💻
+Markdown Based Flashcards using Spaced repetition for Developers.
 </p>
+
+## Credit
+
+Inspired by and forked from [Slidev](https://github.com/slidevjs/slidev)  by Anthony Fu.
 
 ## Why
 
@@ -39,7 +43,7 @@ When learning flashcards can be really powerful tool. With technology, we can em
 - 🛠 [**Hackable**](https://sli.dev/custom/config-vite.html) - using Vite plugins, Vue components, or any npm packages.
 -->
 ## Getting Started
-
+<!-- 
 ### Init Project Locally
 
 Install [Node.js >=14](https://nodejs.org/) and run the following command:
@@ -47,7 +51,7 @@ Install [Node.js >=14](https://nodejs.org/) and run the following command:
 ```bash
 npm init slidev
 ```
-
+-->
 ## Tech Stack
 
 - [Vite](https://vitejs.dev) - An extremely fast frontend tooling
@@ -78,7 +82,16 @@ First I learn so much from reading others code and reading Anthony's code is alw
 ## Other
 
 - [Troubleshooting](./docs/troubleshooting.md)
-- `@slidev/cli` is included in root `package.json` so that the VS Code Extension [antfu.slidev](https://marketplace.visualstudio.com/items?itemName=antfu.slidev) can use it. This is a hack for now.
+- Extension [antfu.slidev](https://marketplace.visualstudio.com/items?itemName=antfu.slidev) can be used by adding user or `.vscode/settings.json`
+ to include
+
+```json
+{
+  // .. other settings
+// make slidev extension work even when @slidev/cli is not installed
+  "slidev.enabled": true
+}
+```
 
 ## License
 
