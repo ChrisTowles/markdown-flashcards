@@ -10,6 +10,7 @@
     "markdown-flashcards": ">=0.0.1"
   },
   "scripts": {
+    "clean": "rimraf dist",
     "build": "markdown-flashcards build example.md",
     "dev": "markdown-flashcards example.md --open",
     "export": "markdown-flashcards export example.md",
@@ -21,8 +22,9 @@
     "prism-theme-vars": "^0.2.4",
     "theme-vitesse": "^0.6.0"
   },
+  "//1": "This '@markdown-flashcards/cli' causes a cycle dependency, but it's needed, so we ignore it.",
   "devDependencies": {
-    "@markdown-flashcards/cli": "^0.0.1"
+    "@markdown-flashcards/cli": "workspace:*"
   },
   "//": "Learn more: https://sli.dev/themes/write-a-theme.html",
   "markdown-flashcards": {

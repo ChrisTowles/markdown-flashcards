@@ -1,6 +1,4 @@
-# markdown-flashcards-theme-default
-
-[![NPM version](https://img.shields.io/npm/v/markdown-flashcards-theme-default?color=3AB9D4&label=)](https://www.npmjs.com/package/markdown-flashcards-theme-default)
+# @markdown-flashcards/theme-default
 
 A (...) theme for [Slidev](https://github.com/slidevjs/slidev).
 

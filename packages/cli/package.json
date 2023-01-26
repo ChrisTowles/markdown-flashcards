@@ -37,7 +37,8 @@
     "node": ">=14.0.0"
   },
   "scripts": {
-    "build": "rimraf dist && tsup node/index.ts node/cli.ts --dts --format cjs,esm --splitting --external @markdown-flashcards/client/package.json",
+    "clean": "rimraf dist",
+    "build": "tsup node/index.ts node/cli.ts --dts --format cjs,esm --splitting --external @markdown-flashcards/client/package.json",
     "dev": "nr build --watch",
     "prepublishOnly": "npm run build",
     "start": "esno node/cli.ts"

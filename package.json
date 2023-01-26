@@ -13,6 +13,7 @@
     "demo:build": "zx ./scripts/demo.mjs",
     "demo:composable-vue": "pnpm -C demo/composable-vue run dev",
     "demo:dev": "pnpm -C demo/starter run dev",
+    "clean": "pnpm -r --filter=./packages/** --parallel run clean",
     "dev": "pnpm -r --filter=./packages/** --parallel run dev",
     "lint": "eslint .",
     "lint:fix": "nr lint --fix",
