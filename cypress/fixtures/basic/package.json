@@ -1,9 +1,9 @@
 {
   "private": true,
   "scripts": {
-    "dev": "nodemon -w '../../../packages/cli/dist/*.js' --exec 'slidev --log=info'",
-    "build": "slidev build",
-    "export": "slidev export"
+    "dev": "nodemon -w '../../../packages/cli/dist/*.js' --exec 'markdown-flashcards --log=info'",
+    "build": "markdown-flashcards build",
+    "export": "markdown-flashcards export"
   },
   "devDependencies": {
     "@markdown-flashcards/cli": "workspace:*",

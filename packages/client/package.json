@@ -8,9 +8,9 @@
   "homepage": "https://github.com/ChrisTowles/markdown-flashcards",
   "repository": {
     "type": "git",
-    "url": "https://github.com/slidevjs/slidev"
+    "url": "https://github.com/ChrisTowles/markdown-flashcards"
   },
-  "bugs": "https://github.com/slidevjs/slidev/issues",
+  "bugs": "https://github.com/ChrisTowles/markdown-flashcards/issues",
   "engines": {
     "node": ">=14.0.0"
   },
