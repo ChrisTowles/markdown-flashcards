@@ -2,10 +2,10 @@
   "name": "@markdown-flashcards/types",
   "version": "0.38.4",
   "description": "Shared types declerations for Slidev",
-  "author": "antfu <anthonyfu117@hotmail.com>",
+  "author": "Chris Towles <hi.chris.towles@gmail.com>",
   "license": "MIT",
-  "funding": "https://github.com/sponsors/antfu",
-  "homepage": "https://sli.dev",
+  "funding": "https://github.com/sponsors/ChrisTowles",
+  "homepage": "https://github.com/ChrisTowles/markdown-flashcards",
   "repository": {
     "type": "git",
     "url": "https://github.com/slidevjs/slidev"

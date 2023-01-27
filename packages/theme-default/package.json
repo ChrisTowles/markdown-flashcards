@@ -26,7 +26,7 @@
   "peerDependencies": {
     "@markdown-flashcards/cli": "workspace:*"
   },
-  "//": "Learn more: https://sli.dev/themes/write-a-theme.html",
+  "//": "Learn more: https://github.com/ChrisTowles/markdown-flashcards/blob/main/docs/write-a-theme.md",
   "markdown-flashcards": {
     "colorSchema": "both",
     "highlighter": "all",

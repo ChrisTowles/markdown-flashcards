@@ -2,10 +2,10 @@
   "name": "@markdown-flashcards/client",
   "version": "0.0.1",
   "description": "Presentation slides for developers",
-  "author": "antfu <anthonyfu117@hotmail.com>",
+  "author": "Chris Towles <hi.chris.towles@gmail.com>",
   "license": "MIT",
-  "funding": "https://github.com/sponsors/antfu",
-  "homepage": "https://sli.dev",
+  "funding": "https://github.com/sponsors/ChrisTowles",
+  "homepage": "https://github.com/ChrisTowles/markdown-flashcards",
   "repository": {
     "type": "git",
     "url": "https://github.com/slidevjs/slidev"
