@@ -14,4 +14,5 @@ packages/create-app/template/slides.md
 packages/create-app/template/pages
 composable-vue-cn
 components.d.ts
-.slidev
+.markdown-cards
+.env

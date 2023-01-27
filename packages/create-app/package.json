@@ -1,7 +1,7 @@
 {
-  "name": "create-slidev",
+  "name": "create-markdown-flashcards",
   "version": "0.0.1",
-  "description": "Create starter template for Slidev",
+  "description": "Create starter template for Markdown-flashcards",
   "author": "Chris Towles <hi.chris.towles@gmail.com>",
   "license": "MIT",
   "funding": "https://github.com/sponsors/ChrisTowles",
@@ -13,7 +13,7 @@
   "bugs": "https://github.com/ChrisTowles/markdown-flashcards/issues",
   "main": "index.js",
   "bin": {
-    "create-slidev": "index.js"
+    "create-markdown-flashcards": "index.js"
   },
   "engines": {
     "node": ">=14.0.0"

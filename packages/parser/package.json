@@ -1,7 +1,7 @@
 {
   "name": "@markdown-flashcards/parser",
   "version": "0.0.1",
-  "description": "Markdown parser for Slidev",
+  "description": "Markdown parser for markdown-flashcards",
   "author": "Chris Towles <hi.chris.towles@gmail.com>",
   "license": "MIT",
   "funding": "https://github.com/sponsors/ChrisTowles",

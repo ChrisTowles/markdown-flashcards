@@ -1,6 +1,6 @@
 # @markdown-flashcards/theme-default
 
-A (...) theme for [Slidev](https://github.com/slidevjs/slidev).
+A (...) theme for [Markdown-Flashcards](https://github.com/ChrisTowles/markdown-flashcards).
 
 <!--
   Learn more about how to write a theme:

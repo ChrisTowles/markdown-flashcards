@@ -1,7 +1,5 @@
-The best way of understanding Slidev is to try it, with the following command:
+The best way of understanding `markdown-flashcards` is to try it, with the following command:
 
 ```bash
-npm init slidev
+npm init markdown-flashcards
 ```
-
-Learn more: https://sli.dev

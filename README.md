@@ -11,7 +11,7 @@ Markdown Based Flashcards using Spaced repetition for Developers.
 
 ## Credit
 
-Inspired by and forked from [Slidev](https://github.com/slidevjs/slidev)  by Anthony Fu.
+Inspired by and forked from [Slidev](https://github.com/slidevjs/slidev) by [Anthony Fu](https://github.com/sponsors/antfu)
 
 ## Why
 
@@ -82,7 +82,7 @@ First I learn so much from reading others code and reading Anthony's code is alw
 ## Other
 
 - [Troubleshooting](./docs/troubleshooting.md)
-- Extension [antfu.slidev](https://marketplace.visualstudio.com/items?itemName=antfu.slidev) can be used by adding user or `.vscode/settings.json`
+- VSCode Extension [antfu.slidev](https://marketplace.visualstudio.com/items?itemName=antfu.slidev) can be used to better edit slides by adding `.vscode/settings.json`
  to include
 
 ```json
